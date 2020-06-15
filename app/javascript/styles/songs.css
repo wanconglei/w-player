@@ -1,0 +1,15 @@
+.songs__name {
+  min-width: 30%;
+}
+
+.songs__artist {
+  min-width: 30%;
+}
+
+.songs__album {
+  min-width: 30%;
+}
+
+.songs__actions {
+  min-width: 10%;
+}

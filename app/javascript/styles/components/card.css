@@ -1,0 +1,30 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards__item {
+  margin: 0 15px 50px;
+}
+
+.cards__item__body {
+  margin-top: 12px;
+}
+
+.cards__item__title {
+  display: block;
+  margin: 0 0 6px;
+  font-weight: normal;
+  color: var(--card-title-color);
+}
+
+.cards__item__text {
+  color: var(--card-text-color);
+  margin: 0;
+}
+
+.cards .heading {
+  margin-left: 15px;
+  margin-right: 15px;
+}

@@ -1,0 +1,49 @@
+.form {
+  padding-bottom: 20px;
+}
+
+.form--inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form--inline .input {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.form__field {
+  margin-top: 15px;
+}
+
+.form__field--submit {
+  margin-top: 30px;
+}
+
+.form__field label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__field > label {
+  font-weight: bold;
+}
+
+.form__field input[type='text'] {
+  width: 100%;
+  border: none;
+  border-radius: var(--form-input-border-radius);
+  padding: 6px 10px;
+}
+
+.form__radio {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.form__radio label {
+  margin-bottom: 0;
+  margin-left: 8px;
+}

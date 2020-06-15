@@ -1,0 +1,22 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay--fixed {
+  background: var(--overlay-bg-color);
+  z-index: 101;
+  position: fixed;
+  opacity: 0.75;
+}
+
+.overlay--dark {
+  background: var(--overlay-bg-color);
+  opacity: 0.95;
+}
