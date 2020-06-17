@@ -10,6 +10,12 @@ class User < ApplicationRecord
 
   scoped_field :theme, default: DEFAULT_THEME, available_options: AVAILABLE_THEME_OPTIONS
 
+  def update_settings(settings)
+    settings.each do |key, value|
+      send("#{key}=", value)
+    end
+  end
+
   private
 
   def downcase_email

@@ -1,12 +1,16 @@
 # RailsSettings Model
 class Setting < RailsSettings::Base
-  cache_prefix { "v1" }
+  include GlobalSetting
 
-  # Define your fields
-  # field :host, type: :string, default: "http://localhost:3000"
-  # field :default_locale, default: "en", type: :string
-  # field :confirmable_enable, default: "0", type: :boolean
-  # field :admin_emails, default: "admin@rubyonrails.org", type: :array
-  # field :omniauth_google_client_id, default: (ENV["OMNIAUTH_GOOGLE_CLIENT_ID"] || ""), type: :string, readonly: true
-  # field :omniauth_google_client_secret, default: (ENV["OMNIAUTH_GOOGLE_CLIENT_SECRET"] || ""), type: :string, readonly: true
+  field :media_path, default: '/Users/user1/Desktop/wcl/songs'
+  field :discogs_token
+
+  fields_force_to_string :media_path, :discogs_token
+
+  def self.update(values)
+    values.each do |key, value|
+      next unless key.to_sym.in?(AVAILABLE_SETTINGS)
+      send("#{key}=", value) if value != send(key)
+    end
+  end
 end
