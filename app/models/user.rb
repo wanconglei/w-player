@@ -2,6 +2,8 @@ class User < ApplicationRecord
   AVAILABLE_THEME_OPTIONS = %w(dark light auto)
   DEFAULT_THEME = 'dark'
 
+  include ScopedSetting
+
   before_create :downcase_email
 
   validates :email presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }, uniqueness: true

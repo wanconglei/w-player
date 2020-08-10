@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -29,6 +29,20 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem "rails-settings-cached", "~> 2.0"
 gem 'taglib-ruby', '~> 0.7.1'
+gem 'sidekiq', '~> 6.0.0'
+# Pagination
+gem 'pagy', '~> 3.5.0'
+# Map redis types directly to ruby objects
+gem 'redis-objects', '~> 1.4'
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 4.0'
+
+# For image attachment
+gem 'carrierwave', '~> 2.0'
+# For API request
+gem 'httparty', '~> 0.17.0'
+# For browser detection
+gem 'browser', '~> 2.6.1', require: 'browser/browser'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
