@@ -29,7 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem "rails-settings-cached", "~> 2.0"
 gem 'taglib-ruby', '~> 0.7.1'
-gem 'sidekiq', '~> 6.0.0'
+gem 'sidekiq', '~> 6.4.0'
 # Pagination
 gem 'pagy', '~> 3.5.0'
 # Map redis types directly to ruby objects
