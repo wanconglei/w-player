@@ -40,7 +40,7 @@ gem 'redis-objects', '~> 1.4'
 # For image attachment
 gem 'carrierwave', '~> 2.0'
 # For API request
-gem 'httparty', '~> 0.17.0'
+gem 'httparty', '~> 0.21.0'
 # For browser detection
 gem 'browser', '~> 2.6.1', require: 'browser/browser'
 
